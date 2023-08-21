@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -47,7 +51,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-    background-color: #6030b1;
+    background-color: #F9A826;
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -55,12 +59,94 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-    background-color: #5d3eff;
+    background-color: #C17500;
 }
 
 .personal__logo {
     font-size: 24px;
-    color: #6030b1;
+    color: #F9A826;
     margin: 0 12px;
     font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #F9A826;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+.about-me__picture {
+    width: 100%;
+    transform: scale(1.5);
+    padding-top: 15px;
+    padding-right: 6px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__image {
+    width: 100%;
 }
